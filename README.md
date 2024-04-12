@@ -2,7 +2,7 @@
 Date, 2024,03,24
 By Felicity Muhonja Ilavatsa
 Description
-This is a project that allows people to adopt animals for pets specifically cats and dogs
+This is a project that allows people to adopt animals for pets specifically cats and dogs. These pets are trained to help people especially the elders and the handicupped 
 
 Installation
 You use git clone to be able to download the documents in the GitHub
