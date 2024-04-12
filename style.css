@@ -1,0 +1,92 @@
+*{
+    margin:auto ;
+    padding: auto;
+    box-sizing: border-box;
+}
+html{
+     scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#Home{
+    height: 80vh;
+    background-color:bisque;
+    text-align: center;
+}
+
+#Explicit-Choice{
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+}
+
+#Adoption-forms{
+    height: 10vh;
+    background-color:whitesmoke;
+    text-align: center;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.bottom-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.hidden {
+    display: none;
+}
+
+label{
+    display: block;
+}
+
+button{
+    display: block;
+    background-color: aquamarine;
+    border: 0px;
+    padding:0px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.top-section{
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 1000px;
+    text-align: center;
+}
+
+.bottom-section{
+    background-color: black;
+    height: 100vh;
+    width: 1000px;
+    text-align: center;
+}
+
+li{
+    text-align: center;
+    
+}
+
+
+
+

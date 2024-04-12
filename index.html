@@ -3,42 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terminal Pet Adoption</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Petfinder Adoption</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Petfinder Adoption </h1>
-  </header>
+  <section class="WELCOME TO PETFINDER" id="Home">
+    <header>
+  <nav>
+    <div>
+      <img src="./image assets" alt="Petfinder logo">
+      <p>If one four-legged friend brings so much joy into your life, surely more than one boosts the fun, right? While there are compelling benefits to having multiple pets, there are also important considerations to weigh before making the decision to bring additional cats or dogs into your home. When the decision is properly informed, it ensures the multi-pet household dynamic works well for you.
+
+        MORE COMPANIONSHIP FOR YOU
+        Cats and dogs can be loyal friends. They have a special way of comforting you and bringing a smile to your face, even when you're not in the best mood. They keep you company, play with you, snuggle you and make you laugh. Multiple pets mean more soft fur to run your hands through and more companionship, even when one of your fuzzy buddies is off on her own.
+        
+        MORE COMPANIONSHIP FOR YOUR PETS
+        You can't always be around to entertain your cat or dog. Two or more pets can provide additional companionship for each other. Multiple compatible pets play together, helping stave off under-stimulation and boredom that can lead to behavioral problems. This enriching relationship may also reduce or prevent separation anxiety and ease your conscience when you have to go out. However, more pets don't add up to a bandage for separation anxiety; you may simply end up with multiple pets sharing the condition, as trainer Kathy Diamond Davis cautions on VeterinaryPartner.com. Of course, the antics of pets playing together is a great source of amusement. Keep in mind, though, that not all pets get along well, and they may even pose dangers to each other if they fight.
+        
+        INCREASED SOCIALIZATION FOR YOUR PETS
+        Socializing pets with other companion animals - especially when they're kittens and puppies - is essential to their emotional development. Cats and dogs need experiences with others to become confident, adaptable and accepting. Socialization teaches your pet to interact with other cats, dogs and people appropriately and with less anxiety, explains Veterinary Pet Insurance. While single-pet parents have to find socialization opportunities out of the home, multi-pet parents have a built-in socializing environment; however socialization with less familiar cats and dogs is still important.
+        
+        INCREASED SOCIALIZATION FOR YOU
+        More pets get you out and interacting more with other people. Because dogs should sometimes be walked and taken out for excursions on their own, having more than one requires extra trips around the neighborhood and to the dog park, where you can chat with neighbors and other pet parents. Multiple pets create more opportunities for trips to the groomer, pet spas or classes and other public places where you meet people who share your love of cats and dogs.</p>
+    </div>
+    <ul>
+      <li><a href="#Home">WELCOME TO PETFINDER</a></li>
+      <li><a href="#Explicit-Choice">Browse Pets</a></li>
+      <li><a href="#Adoption-forms">Adoption forms</a></li>
+    </ul>
+  </nav>
+</header>
+</section>
+  <section class="Explicit Pet Choice" id="Explicit-Choice">
+    <header>
+      <nav>
+        <div class="image-container">
+          <button id="cat-browser">Browse Cats</button>
+          <img src="./cat.jpeg" alt="image 1"  id="top-image">
+          
+         <button id="dog-browser">Browse Dogs</button>
+          <img src="./dogs.jpg" alt="image 2" id="bottom-image hidden">
+          </div>
+    </nav>
+    </header>
+  </section>
+  <section class="Adoption-forms" id="Adoption-forms"> 
+    <form action="Adoption-forms">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="address">Address:</label>
+    <textarea id="address " name="address" required></textarea>
+
+    <label for="contact">Contact:</label>
+    <textarea name="contact" id="contact" required></textarea>
+
+    <button type="submit" id="submit-button">Submit Adoption Request</button>
+    </form>
+  </section>
   <main>
-    <section id="pets">
-      <h2> Available Pets </h2>
-      <ul id="pet-list">
-        <!-- Pets will be dynamically added here -->
-      </ul>
-    </section>
-    <section id="adoption-form">
-      <h2> Adoption Form </h2>
-      <form id="adoption-form">
-        <label for="name"> Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone"> Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <label for="address"> Address:</label>
-        <textarea id="address" name="address" required></textarea>
-
-        <button type="submit"> Submit Adoption Request </button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Petfinder Adoption</p>
-  </footer>
-  <script src="scripts.js"></script>
+    <footer>
+      <p> Copyrights; 2024 Petfinder Adoption</p>
+    </footer>
+  <script src="main.js">Adoption-forms</script>
 </body>
 </html>
