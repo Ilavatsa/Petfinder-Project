@@ -1,29 +1,30 @@
-const dogBaseUrl = "https://dog.ceo/api/breeds";
 const catApiUrl = "https://api.thecatapi.com/v1/images/search";
+const dogApiUrl = "https://dog.ceo/api/breeds/image/random";
 
-let dogRandomImg = document.querySelector('#random-dog');
-let catRandomImg = document.querySelector('#random-cat');
-let dogBrowse = document.querySelector('#dog-browser');
-let catBrowse = document.querySelector('#cat-browser');
+const topImage = document.getElementById('top-image');
+const bottomImage = document.getElementById('bottom-image');
+const dogBrowserBtn = document.getElementById('dog-browser');
+const catBrowserBtn = document.getElementById('cat-browser');
 
-function fetchRandomDog(){
-    fetch(`${dogBaseUrl}/image/random`)
-    .then((res) => res.json())
-    .then((data) => {
-        dogRandomImg.src = data.message;
-    });
+dogBrowserBtn.addEventListener('click', fetchRandomDogImage);
+catBrowserBtn.addEventListener('click', fetchRandomCatImage);
+
+function fetchRandomDogImage() {
+    fetch(dogApiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const imageUrl = data.message;
+            bottomImage.src = imageUrl;
+        })
+        .catch(error => console.error('Error fetching dog image:', error));
 }
 
-function fetchRandomCat(){
+function fetchRandomCatImage() {
     fetch(catApiUrl)
-    .then((res) => res.json())
-    .then((data) => {
-        catRandomImg.src = data[0].url;
-    });
+        .then(response => response.json())
+        .then(data => {
+            const imageUrl = data[0].url;
+            topImage.src = imageUrl;
+        })
+        .catch(error => console.error('Error fetching cat image:', error));
 }
-
-dogBrowse.addEventListener('click', fetchRandomDog);
-catBrowse.addEventListener('click', fetchRandomCat);
-
-fetchRandomDog();
-fetchRandomCat();
