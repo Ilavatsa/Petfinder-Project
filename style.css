@@ -8,7 +8,7 @@ html{
 }
 
 body {
-    height: 100vh;
+    height: 80vh;
 }
 
 .center-text {
@@ -70,14 +70,14 @@ button{
 
 .top-section{
     background-color: black;
-    height: 100vh;
+    height: 80vh;
     width: 1000px;
     text-align: center;
 }
 
 .bottom-section{
     background-color: black;
-    height: 100vh;
+    height: 80vh;
     width: 1000px;
     text-align: center;
 }
